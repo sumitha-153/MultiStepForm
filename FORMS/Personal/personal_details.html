@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal details</title>
+    <link rel="stylesheet" href="personal_details.css">
+    <link rel="stylesheet" href="../SIDEBAR/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+                        <div id="navbar">
+                            <div style="display: flex;">
+                                <i class="fa fa-bell" style="margin-left: 1050px;"></i> Notification
+                                <i class="fa fa-user" style="margin-left: 50px;"></i>Profile
+                            </div>            
+                        </div>
+
+
+        <div style="display: flex;flex-direction: row;">
+             
+            <div class="sidebar">           
+
+                <div class="content" id="button_container"></div>
+                <hr width="140px" size="0.5px"color="grey"> <br>
+            </div>
+
+            <div class="container">
+                <h3 id="tle">Personal details  </h3>
+                
+                <!-- ----Name----  -->
+                <div class="Name" style="display:flex; flex-direction: row;  gap:20px">
+                    <div>
+                        <label for="fname">First Name <span>*</span></label> <br>
+                        <input type="text" id="fname" required placeholder="Enter your First name" style="width:130px">
+                        
+                    </div>
+                    <div>
+                        <label for="lname">Last Name<span>*</span></label> <br>
+                    <input type="text" id="lname" placeholder="Enter your Last name" required style="width:130px">
+                    </div>
+                </div>
+                <p id="nameerror"></p> <br> 
+    
+                <!-- -----Gender----- -->
+                 <div>
+                    <label for="gender">Gender<span>*</span> <br>
+                        <select id="gender" style="width:320px;" required>
+                            <option value="">Select the option</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+    
+                    </label>
+                 </div>
+                 <p id="gendererror"></p> <br>
+    
+                 <!-- -----Date of birth----- -->
+                <label for="dob">Date of Birth<span>*</span></label>
+                <input type="date" id="dob" required placeholder="Date of the month">
+                <p id="doberror"></p>
+                <br>
+    
+                <!-- ----Address----  -->    
+                <label for="address">Address<span>*</span></label> 
+                <textarea id="address" cols="10" rows="3" required placeholder="Enter your address" ></textarea>
+                <p id="addresserror"></p> <br> 
+    
+                <div style="display: flex; flex-direction:flex-start; gap:280px;">
+                    <div><button id="previous" style="display: none;">&laquo;Previous</button></div>
+                    <div ><button  id="next" on>Next  &raquo; </button></div>                                       
+                </div> 
+            </div>                  
+        </div>
+
+    </div>        
+</body>
+<script src="personal_details.js"></script>
+<script src="../Education/education.html"></script>
+<script src="../SIDEBAR/script.js"></script>
+</html>

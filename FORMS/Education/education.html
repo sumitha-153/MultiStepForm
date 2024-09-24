@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Details</title>
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="../SIDEBAR/sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        
+        <div id="navbar">
+            <div style="display: flex;">
+                <i class="fa fa-bell" style="margin-left: 1100px;"></i> Notification
+                <i class="fa fa-user" style="margin-left: 50px;"></i>Profile
+            </div>            
+        </div>
+
+        <div style="display: flex;flex-direction: row;"> 
+
+            <div class="sidebar">           
+
+                <div class="content" id="button_container"></div>
+                <hr width="140px" size="0.5px"color="grey"> <br>
+            </div>     
+
+           <div class="container">
+
+                 <h3 id="tle">Educational details</h3>
+
+                 <!-- -----College Name----- -->
+                    <label for="clgname">College name<span>*</span></label>
+                    <input type="text" id="clgname" required placeholder="Enter your College name">
+                    <p id="clgerror"></p> <br>
+
+                    <!-- -----Department----- -->
+                    <label for="dep">Department<span>*</span></label>              
+                    <select id="dep" style="width: 320px;" required>
+                        <option value="">Choose your Department</option>
+                        <option value="CSE">Computer science and engineering</option>
+                        <option value="ECE">Electrical and communication engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="AIDS">AIDS</option>
+                        <option value="ML">Machine Learning</option>
+                        <option value="AIML">AI&ML</option>
+                        <option value="MECHANICAL">Mechanical engineering</option>
+                    </select>
+                    <p id="deperror"></p>  <br>
+
+                    <!-- ----Passout Year---- -->
+                    <label for="year">Passout Year<span>*</span></label>
+                    <input type="text" required  id="year" min=2018 max=2025 placeholder="Passout year">
+                    <p id="yrerror"></p> <br> 
+
+                    <!-- ------Tech skills -->
+
+                    <label for="skills">Technical Skills <span>*</span></label>
+                    <input type="text" id="skills" placeholder="Html,Css,Javascript"> 
+                    <p id="skillerror"></p><br>
+                    
+                    <div style="display: flex; flex-direction:flex-start; gap:210px;">
+                        <div><button id="previous">&laquo;  Previous</button></div>
+                        <div ><button  id="next">Next  &raquo; </button></div>                                       
+                    </div> 
+         </div>
+       </div>
+    </div>
+</body>
+<script src="education.js"></script>
+<script src="../SIDEBAR/script.js"></script>
+</html>
